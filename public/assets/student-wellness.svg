@@ -1,0 +1,194 @@
+<svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="plantGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#065f46;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <linearGradient id="paperGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.2" />
+    </linearGradient>
+    
+    <linearGradient id="mindGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.4" />
+    </linearGradient>
+    
+    <radialGradient id="lightGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="70%" style="stop-color:#fbbf24;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.05" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Warm ambient light -->
+  <ellipse cx="350" cy="100" rx="300" ry="150" fill="url(#lightGradient)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="10s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Floating books representing learning -->
+  <g opacity="0.7">
+    <!-- Book 1 -->
+    <g transform="translate(150, 200)">
+      <rect x="0" y="0" width="50" height="35" rx="3" fill="url(#bookGradient)">
+        <animateTransform attributeName="transform" type="rotate" values="0;5;-5;0" dur="8s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" dur="6s" repeatCount="indefinite" additive="sum"/>
+      </rect>
+      <rect x="5" y="5" width="40" height="25" fill="#ffffff" opacity="0.3"/>
+      <line x1="10" y1="12" x2="40" y2="12" stroke="#1e40af" stroke-width="1" opacity="0.5"/>
+      <line x1="10" y1="18" x2="35" y2="18" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+      <line x1="10" y1="24" x2="38" y2="24" stroke="#1e40af" stroke-width="1" opacity="0.3"/>
+    </g>
+    
+    <!-- Book 2 -->
+    <g transform="translate(500, 180)">
+      <rect x="0" y="0" width="45" height="32" rx="3" fill="#ec4899" opacity="0.7">
+        <animateTransform attributeName="transform" type="rotate" values="0;-3;3;0" dur="9s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="7s" repeatCount="indefinite" additive="sum"/>
+      </rect>
+      <rect x="4" y="4" width="37" height="24" fill="#ffffff" opacity="0.3"/>
+      <line x1="8" y1="10" x2="35" y2="10" stroke="#be185d" stroke-width="1" opacity="0.5"/>
+      <line x1="8" y1="15" x2="32" y2="15" stroke="#be185d" stroke-width="1" opacity="0.4"/>
+      <line x1="8" y1="20" x2="36" y2="20" stroke="#be185d" stroke-width="1" opacity="0.3"/>
+    </g>
+    
+    <!-- Book 3 -->
+    <g transform="translate(300, 350)">
+      <rect x="0" y="0" width="48" height="34" rx="3" fill="#10b981" opacity="0.8">
+        <animateTransform attributeName="transform" type="rotate" values="0;4;-4;0" dur="7s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-12;0,0" dur="8s" repeatCount="indefinite" additive="sum"/>
+      </rect>
+      <rect x="4" y="4" width="40" height="26" fill="#ffffff" opacity="0.3"/>
+      <line x1="8" y1="11" x2="38" y2="11" stroke="#065f46" stroke-width="1" opacity="0.5"/>
+      <line x1="8" y1="17" x2="35" y2="17" stroke="#065f46" stroke-width="1" opacity="0.4"/>
+      <line x1="8" y1="23" x2="37" y2="23" stroke="#065f46" stroke-width="1" opacity="0.3"/>
+    </g>
+  </g>
+  
+  <!-- Study plant for wellness and growth -->
+  <g transform="translate(100, 350)" opacity="0.8">
+    <!-- Pot -->
+    <ellipse cx="0" cy="30" rx="25" ry="15" fill="#8b4513" opacity="0.6"/>
+    <rect x="-20" y="15" width="40" height="20" rx="5" fill="#a0522d" opacity="0.7"/>
+    
+    <!-- Stem -->
+    <rect x="-2" y="0" width="4" height="20" fill="url(#plantGradient)">
+      <animate attributeName="height" values="20;25;20" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Leaves -->
+    <ellipse cx="-8" cy="5" rx="6" ry="12" fill="url(#plantGradient)" transform="rotate(-30)">
+      <animateTransform attributeName="transform" type="rotate" values="-30;-25;-30" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="8" cy="8" rx="7" ry="14" fill="url(#plantGradient)" transform="rotate(25)">
+      <animateTransform attributeName="transform" type="rotate" values="25;30;25" dur="5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="0" cy="-5" rx="8" ry="15" fill="url(#plantGradient)">
+      <animate attributeName="ry" values="15;18;15" dur="7s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  
+  <!-- Floating paper/notes representing thoughts -->
+  <g opacity="0.6">
+    <!-- Note 1 -->
+    <rect x="400" y="250" width="40" height="30" rx="2" fill="url(#paperGradient)">
+      <animateTransform attributeName="transform" type="rotate" values="0;8;-8;0" dur="12s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;15,-20;-10,-15;0,0" dur="15s" repeatCount="indefinite" additive="sum"/>
+    </rect>
+    <line x1="405" y1="258" x2="430" y2="258" stroke="#f59e0b" stroke-width="0.8" opacity="0.7"/>
+    <line x1="405" y1="263" x2="425" y2="263" stroke="#f59e0b" stroke-width="0.8" opacity="0.6"/>
+    <line x1="405" y1="268" x2="432" y2="268" stroke="#f59e0b" stroke-width="0.8" opacity="0.5"/>
+    
+    <!-- Note 2 -->
+    <rect x="200" y="120" width="35" height="28" rx="2" fill="#fef3c7" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="0;-6;6;0" dur="10s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-12,-18;8,-12;0,0" dur="13s" repeatCount="indefinite" additive="sum"/>
+    </rect>
+    <line x1="204" y1="127" x2="225" y2="127" stroke="#f59e0b" stroke-width="0.7" opacity="0.6"/>
+    <line x1="204" y1="132" x2="222" y2="132" stroke="#f59e0b" stroke-width="0.7" opacity="0.5"/>
+    <line x1="204" y1="137" x2="227" y2="137" stroke="#f59e0b" stroke-width="0.7" opacity="0.4"/>
+  </g>
+  
+  <!-- Mental wellness symbols -->
+  <g opacity="0.5">
+    <!-- Brain/mind symbol -->
+    <g transform="translate(550, 120)">
+      <circle cx="0" cy="0" r="20" fill="url(#mindGradient)">
+        <animate attributeName="r" values="20;25;20" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0.8;0.4" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Neural network lines -->
+      <g opacity="0.6">
+        <line x1="-12" y1="-8" x2="12" y2="8" stroke="#8b5cf6" stroke-width="1">
+          <animate attributeName="stroke-dasharray" values="0,24;12,12;24,0;0,24" dur="6s" repeatCount="indefinite"/>
+        </line>
+        <line x1="-12" y1="8" x2="12" y2="-8" stroke="#7c3aed" stroke-width="1">
+          <animate attributeName="stroke-dasharray" values="24,0;12,12;0,24;24,0" dur="6s" repeatCount="indefinite"/>
+        </line>
+        <line x1="0" y1="-15" x2="0" y2="15" stroke="#8b5cf6" stroke-width="1">
+          <animate attributeName="stroke-dasharray" values="0,30;15,15;30,0;0,30" dur="7s" repeatCount="indefinite"/>
+        </line>
+      </g>
+    </g>
+    
+    <!-- Balance symbol -->
+    <g transform="translate(80, 150)">
+      <circle cx="0" cy="0" r="15" fill="none" stroke="url(#mindGradient)" stroke-width="2">
+        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="20s" repeatCount="indefinite"/>
+      </circle>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#8b5cf6" stroke-width="2"/>
+      <circle cx="-8" cy="0" r="3" fill="#7c3aed"/>
+      <circle cx="8" cy="0" r="3" fill="#7c3aed"/>
+    </g>
+  </g>
+  
+  <!-- Positive energy particles -->
+  <g opacity="0.4">
+    <circle cx="250" cy="80" r="3" fill="#fbbf24">
+      <animate attributeName="cy" values="80;60;80" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="450" cy="320" r="2.5" fill="#10b981">
+      <animate attributeName="cy" values="320;300;320" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="600" cy="280" r="4" fill="#8b5cf6">
+      <animate attributeName="cy" values="280;260;280" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.75;0.25" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="50" cy="250" r="3.5" fill="#ec4899">
+      <animate attributeName="cy" values="250;230;250" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Connecting flow lines for harmony -->
+  <g opacity="0.3">
+    <path d="M100,200 Q250,150 400,200 Q550,250 650,200" 
+          fill="none" stroke="url(#mindGradient)" stroke-width="2">
+      <animate attributeName="d" 
+               values="M100,200 Q250,150 400,200 Q550,250 650,200;
+                       M100,210 Q250,160 400,210 Q550,260 650,210;
+                       M100,200 Q250,150 400,200 Q550,250 650,200" 
+               dur="12s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M50,350 Q200,300 350,350 Q500,400 650,350" 
+          fill="none" stroke="url(#plantGradient)" stroke-width="2">
+      <animate attributeName="d" 
+               values="M50,350 Q200,300 350,350 Q500,400 650,350;
+                       M50,340 Q200,290 350,340 Q500,390 650,340;
+                       M50,350 Q200,300 350,350 Q500,400 650,350" 
+               dur="14s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

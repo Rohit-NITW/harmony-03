@@ -1,0 +1,97 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="doctorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="75" r="65" fill="#fff7ed" opacity="0.8"/>
+  
+  <!-- Professional figure -->
+  <g transform="translate(100, 75)">
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="12" fill="url(#doctorGrad)"/>
+    
+    <!-- Lab coat / Professional attire -->
+    <rect x="-12" y="-10" width="24" height="35" rx="8" fill="url(#coatGrad)" stroke="#e5e7eb"/>
+    
+    <!-- Shirt/tie -->
+    <rect x="-4" y="-8" width="8" height="20" fill="#3b82f6"/>
+    <rect x="-2" y="-6" width="4" height="15" fill="#1d4ed8"/>
+    
+    <!-- Stethoscope -->
+    <circle cx="-8" cy="-5" r="3" fill="#6b7280" opacity="0.7"/>
+    <circle cx="8" cy="-5" r="3" fill="#6b7280" opacity="0.7"/>
+    <path d="M-8 -2 Q0 5 8 -2" stroke="#6b7280" stroke-width="2" fill="transparent"/>
+    <circle cx="0" cy="3" r="2" fill="#6b7280"/>
+    
+    <!-- Arms -->
+    <ellipse cx="-15" cy="0" rx="4" ry="12" fill="url(#doctorGrad)"/>
+    <ellipse cx="15" cy="0" rx="4" ry="12" fill="url(#doctorGrad)"/>
+    
+    <!-- Hands -->
+    <circle cx="-15" cy="12" r="3" fill="url(#doctorGrad)"/>
+    <circle cx="15" cy="12" r="3" fill="url(#doctorGrad)"/>
+  </g>
+  
+  <!-- Clipboard in hand -->
+  <g transform="translate(120, 85)">
+    <rect x="-5" y="-8" width="10" height="16" fill="white" stroke="#d1d5db" rx="2"/>
+    <rect x="-3" y="-6" width="6" height="2" fill="#3b82f6"/>
+    <rect x="-3" y="-2" width="6" height="1" fill="#d1d5db"/>
+    <rect x="-3" y="1" width="4" height="1" fill="#d1d5db"/>
+    <rect x="-3" y="4" width="5" height="1" fill="#d1d5db"/>
+  </g>
+  
+  <!-- Medical cross -->
+  <g transform="translate(50, 50)">
+    <circle cx="0" cy="0" r="12" fill="#ef4444" opacity="0.9"/>
+    <rect x="-6" y="-2" width="12" height="4" fill="white"/>
+    <rect x="-2" y="-6" width="4" height="12" fill="white"/>
+  </g>
+  
+  <!-- Floating credential badges -->
+  <g transform="translate(150, 45)">
+    <rect x="-8" y="-6" width="16" height="12" fill="white" stroke="#d1d5db" rx="2"/>
+    <circle cx="0" cy="-2" r="2" fill="#10b981"/>
+    <rect x="-6" y="2" width="12" height="1" fill="#6b7280"/>
+    <rect x="-4" y="4" width="8" height="1" fill="#6b7280"/>
+  </g>
+  
+  <!-- Psychology symbol -->
+  <g transform="translate(40, 100)" opacity="0.7">
+    <path d="M0 0 C-5 -10 5 -10 10 0 C15 10 5 20 0 10 C-5 20 -15 10 -10 0 C-5 -10 5 -10 0 0 Z" fill="#8b5cf6" opacity="0.6"/>
+    <text x="0" y="2" text-anchor="middle" font-size="8" fill="white" font-family="Arial">ψ</text>
+  </g>
+  
+  <!-- Connection lines (representing network) -->
+  <g opacity="0.3">
+    <line x1="70" y1="60" x2="130" y2="90" stroke="#f97316" stroke-width="2"/>
+    <line x1="130" y1="60" x2="70" y2="90" stroke="#3b82f6" stroke-width="1"/>
+    <circle cx="70" cy="60" r="3" fill="#10b981"/>
+    <circle cx="130" cy="90" r="3" fill="#10b981"/>
+    <circle cx="130" cy="60" r="3" fill="#f97316"/>
+    <circle cx="70" cy="90" r="3" fill="#f97316"/>
+  </g>
+  
+  <!-- Specialization icons -->
+  <g transform="translate(160, 100)" opacity="0.6">
+    <!-- Therapy couch -->
+    <rect x="0" y="5" width="15" height="8" rx="4" fill="#8b5cf6"/>
+    <rect x="-2" y="10" width="4" height="6" fill="#6b7280"/>
+    <rect x="13" y="10" width="4" height="6" fill="#6b7280"/>
+  </g>
+  
+  <!-- Rating stars -->
+  <g transform="translate(45, 30)" opacity="0.8">
+    <path d="M0 0 L2 4 L6 4 L3 7 L4 11 L0 9 L-4 11 L-3 7 L-6 4 L-2 4 Z" fill="#fbbf24" transform="scale(0.5)"/>
+    <path d="M10 0 L12 4 L16 4 L13 7 L14 11 L10 9 L6 11 L7 7 L4 4 L8 4 Z" fill="#fbbf24" transform="scale(0.5)"/>
+    <path d="M20 0 L22 4 L26 4 L23 7 L24 11 L20 9 L16 11 L17 7 L14 4 L18 4 Z" fill="#fbbf24" transform="scale(0.5)"/>
+  </g>
+</svg>

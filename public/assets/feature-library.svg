@@ -1,0 +1,84 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bookGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bookGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bookGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="75" r="65" fill="#ecfdf5" opacity="0.8"/>
+  
+  <!-- Bookshelf base -->
+  <rect x="40" y="100" width="120" height="8" fill="#6b7280" rx="2"/>
+  
+  <!-- Books -->
+  <!-- Book 1 (tallest) -->
+  <rect x="50" y="40" width="20" height="60" fill="url(#bookGrad1)" rx="2"/>
+  <rect x="52" y="42" width="16" height="3" fill="#065f46" opacity="0.7" rx="1"/>
+  <rect x="52" y="47" width="12" height="2" fill="#065f46" opacity="0.5" rx="1"/>
+  <rect x="52" y="51" width="14" height="2" fill="#065f46" opacity="0.5" rx="1"/>
+  <rect x="50" y="95" width="20" height="3" fill="#047857" rx="1"/>
+  
+  <!-- Book 2 (medium) -->
+  <rect x="75" y="50" width="18" height="50" fill="url(#bookGrad2)" rx="2"/>
+  <rect x="77" y="52" width="14" height="3" fill="#1e40af" opacity="0.7" rx="1"/>
+  <rect x="77" y="57" width="10" height="2" fill="#1e40af" opacity="0.5" rx="1"/>
+  <rect x="77" y="61" width="12" height="2" fill="#1e40af" opacity="0.5" rx="1"/>
+  <rect x="75" y="95" width="18" height="3" fill="#1e3a8a" rx="1"/>
+  
+  <!-- Book 3 (short) -->
+  <rect x="98" y="60" width="16" height="40" fill="url(#bookGrad3)" rx="2"/>
+  <rect x="100" y="62" width="12" height="3" fill="#b45309" opacity="0.7" rx="1"/>
+  <rect x="100" y="67" width="8" height="2" fill="#b45309" opacity="0.5" rx="1"/>
+  <rect x="100" y="71" width="10" height="2" fill="#b45309" opacity="0.5" rx="1"/>
+  <rect x="98" y="95" width="16" height="3" fill="#92400e" rx="1"/>
+  
+  <!-- Book 4 (tall) -->
+  <rect x="119" y="35" width="19" height="65" fill="url(#bookGrad2)" rx="2"/>
+  <rect x="121" y="37" width="15" height="3" fill="#1e40af" opacity="0.7" rx="1"/>
+  <rect x="121" y="42" width="11" height="2" fill="#1e40af" opacity="0.5" rx="1"/>
+  <rect x="121" y="46" width="13" height="2" fill="#1e40af" opacity="0.5" rx="1"/>
+  <rect x="119" y="95" width="19" height="3" fill="#1e3a8a" rx="1"/>
+  
+  <!-- Book 5 (medium-short) -->
+  <rect x="143" y="55" width="17" height="45" fill="url(#bookGrad1)" rx="2"/>
+  <rect x="145" y="57" width="13" height="3" fill="#065f46" opacity="0.7" rx="1"/>
+  <rect x="145" y="62" width="9" height="2" fill="#065f46" opacity="0.5" rx="1"/>
+  <rect x="145" y="66" width="11" height="2" fill="#065f46" opacity="0.5" rx="1"/>
+  <rect x="143" y="95" width="17" height="3" fill="#047857" rx="1"/>
+  
+  <!-- Digital elements (floating) -->
+  <!-- Video play button -->
+  <circle cx="160" cy="30" r="12" fill="#ef4444" opacity="0.8"/>
+  <path d="M156 26 L166 30 L156 34 Z" fill="white"/>
+  
+  <!-- Document icon -->
+  <g transform="translate(30, 20)">
+    <rect x="0" y="0" width="16" height="20" fill="white" stroke="#d1d5db" stroke-width="1" rx="2"/>
+    <path d="M12 0 L16 4 L12 4 Z" fill="#d1d5db"/>
+    <rect x="2" y="6" width="10" height="1" fill="#9ca3af" rx="0.5"/>
+    <rect x="2" y="9" width="8" height="1" fill="#9ca3af" rx="0.5"/>
+    <rect x="2" y="12" width="9" height="1" fill="#9ca3af" rx="0.5"/>
+    <rect x="2" y="15" width="7" height="1" fill="#9ca3af" rx="0.5"/>
+  </g>
+  
+  <!-- Knowledge symbols -->
+  <g transform="translate(45, 15)" opacity="0.6">
+    <circle cx="5" cy="5" r="3" fill="#8b5cf6"/>
+    <text x="5" y="8" text-anchor="middle" font-size="6" fill="white" font-family="Arial">?</text>
+  </g>
+  
+  <!-- Floating particles -->
+  <circle cx="170" cy="50" r="2" fill="#10b981" opacity="0.6"/>
+  <circle cx="25" cy="45" r="1.5" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="175" cy="80" r="1" fill="#f59e0b" opacity="0.6"/>
+</svg>

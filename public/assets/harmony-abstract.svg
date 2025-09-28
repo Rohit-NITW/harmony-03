@@ -1,0 +1,149 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="harmonyGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.4" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:0.2" />
+    </linearGradient>
+    
+    <linearGradient id="harmonyGradient2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#34d399;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#6ee7b7;stop-opacity:0.2" />
+    </linearGradient>
+    
+    <linearGradient id="harmonyGradient3" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#f472b6;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#ec4899;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#be185d;stop-opacity:0.2" />
+    </linearGradient>
+    
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="70%" style="stop-color:#667eea;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.02" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Base harmonic circles - representing balance and wellness -->
+  <g opacity="0.6">
+    <!-- Large central harmony circle -->
+    <circle cx="400" cy="300" r="150" fill="url(#centerGlow)">
+      <animate attributeName="r" values="150;170;150" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Orbiting harmony circles -->
+    <g transform="translate(400, 300)">
+      <!-- Circle 1 -->
+      <circle cx="100" cy="0" r="40" fill="url(#harmonyGradient1)">
+        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Circle 2 -->
+      <circle cx="-80" cy="60" r="35" fill="url(#harmonyGradient2)">
+        <animateTransform attributeName="transform" type="rotate" values="120;480" dur="25s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0.5;0.2" dur="10s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Circle 3 -->
+      <circle cx="-50" cy="-90" r="30" fill="url(#harmonyGradient3)">
+        <animateTransform attributeName="transform" type="rotate" values="240;600" dur="18s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.25;0.55;0.25" dur="7s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Flowing organic shapes for wellness theme -->
+  <g opacity="0.4">
+    <!-- Flowing shape 1 -->
+    <path d="M100,200 Q200,150 300,200 Q400,250 500,200 Q600,150 700,200 Q650,300 550,250 Q450,200 350,250 Q250,300 150,250 Q100,200 100,200" 
+          fill="url(#harmonyGradient1)">
+      <animate attributeName="d" 
+               values="M100,200 Q200,150 300,200 Q400,250 500,200 Q600,150 700,200 Q650,300 550,250 Q450,200 350,250 Q250,300 150,250 Q100,200 100,200;
+                       M100,220 Q200,170 300,220 Q400,270 500,220 Q600,170 700,220 Q650,320 550,270 Q450,220 350,270 Q250,320 150,270 Q100,220 100,220;
+                       M100,200 Q200,150 300,200 Q400,250 500,200 Q600,150 700,200 Q650,300 550,250 Q450,200 350,250 Q250,300 150,250 Q100,200 100,200" 
+               dur="15s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Flowing shape 2 -->
+    <path d="M150,400 Q250,350 350,400 Q450,450 550,400 Q650,350 750,400 Q700,500 600,450 Q500,400 400,450 Q300,500 200,450 Q150,400 150,400" 
+          fill="url(#harmonyGradient2)">
+      <animate attributeName="d" 
+               values="M150,400 Q250,350 350,400 Q450,450 550,400 Q650,350 750,400 Q700,500 600,450 Q500,400 400,450 Q300,500 200,450 Q150,400 150,400;
+                       M150,380 Q250,330 350,380 Q450,430 550,380 Q650,330 750,380 Q700,480 600,430 Q500,380 400,430 Q300,480 200,430 Q150,380 150,380;
+                       M150,400 Q250,350 350,400 Q450,450 550,400 Q650,350 750,400 Q700,500 600,450 Q500,400 400,450 Q300,500 200,450 Q150,400 150,400" 
+               dur="18s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Geometric harmony patterns -->
+  <g opacity="0.3">
+    <!-- Triangle harmony -->
+    <polygon points="400,100 500,250 300,250" fill="none" stroke="url(#harmonyGradient1)" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" values="0 400 200;120 400 200" dur="30s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Pentagon harmony -->
+    <polygon points="400,450 450,470 440,520 360,520 350,470" fill="none" stroke="url(#harmonyGradient2)" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" values="0 400 495;-144 400 495" dur="25s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Hexagon harmony -->
+    <polygon points="200,150 240,130 280,150 280,190 240,210 200,190" fill="none" stroke="url(#harmonyGradient3)" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 240 170;60 240 170" dur="20s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Octagon harmony -->
+    <polygon points="600,450 620,430 640,430 660,450 660,480 640,500 620,500 600,480" fill="none" stroke="url(#harmonyGradient1)" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 630 465;45 630 465" dur="22s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  
+  <!-- Connecting energy lines for harmony -->
+  <g opacity="0.2">
+    <!-- Horizontal harmony line -->
+    <line x1="50" y1="300" x2="750" y2="300" stroke="url(#harmonyGradient1)" stroke-width="3">
+      <animate attributeName="stroke-dasharray" values="0,700;350,350;700,0;0,700" dur="8s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Vertical harmony line -->
+    <line x1="400" y1="50" x2="400" y2="550" stroke="url(#harmonyGradient2)" stroke-width="3">
+      <animate attributeName="stroke-dasharray" values="0,500;250,250;500,0;0,500" dur="10s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Diagonal harmony lines -->
+    <line x1="100" y1="100" x2="700" y2="500" stroke="url(#harmonyGradient3)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="0,600;300,300;600,0;0,600" dur="12s" repeatCount="indefinite"/>
+    </line>
+    
+    <line x1="700" y1="100" x2="100" y2="500" stroke="url(#harmonyGradient1)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="600,0;300,300;0,600;600,0" dur="12s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Floating harmony particles -->
+  <g opacity="0.5">
+    <!-- Small floating circles -->
+    <circle cx="150" cy="120" r="4" fill="url(#harmonyGradient1)">
+      <animate attributeName="cy" values="120;100;120" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="650" cy="180" r="3" fill="url(#harmonyGradient2)">
+      <animate attributeName="cy" values="180;160;180" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="80" cy="450" r="5" fill="url(#harmonyGradient3)">
+      <animate attributeName="cy" values="450;430;450" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="720" cy="380" r="3.5" fill="url(#harmonyGradient1)">
+      <animate attributeName="cy" values="380;360;380" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.75;0.25" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
