@@ -1,0 +1,43 @@
+🔥 REPLACE YOUR FIREBASE CONFIG
+
+In the file: src/config/firebase.ts
+
+Replace this section:
+=====================================
+const firebaseConfig = {
+  apiKey: "your-api-key-here",
+  authDomain: "harmony-mental-health-app.firebaseapp.com",
+  projectId: "harmony-mental-health-app",
+  storageBucket: "harmony-mental-health-app.appspot.com",
+  messagingSenderId: "your-sender-id",
+  appId: "your-app-id"
+  // Remove measurementId if you didn't enable Analytics
+};
+=====================================
+
+With YOUR ACTUAL config from Firebase Console:
+=====================================
+const firebaseConfig = {
+  apiKey: "AIza...YOUR_ACTUAL_API_KEY",
+  authDomain: "YOUR_PROJECT_NAME.firebaseapp.com",
+  projectId: "YOUR_ACTUAL_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_NAME.appspot.com",
+  messagingSenderId: "YOUR_ACTUAL_SENDER_ID",
+  appId: "1:YOUR_SENDER_ID:web:YOUR_APP_ID"
+};
+=====================================
+
+Where to find these values:
+1. Go to Firebase Console
+2. Select your project
+3. Click the gear icon ⚙️ > Project settings
+4. Scroll down to "Your apps" section
+5. Click on your web app
+6. Copy the firebaseConfig object
+
+After replacing:
+1. Save the file
+2. Restart your dev server: npm start
+3. Go to: http://localhost:3000/test-chat
+4. Click "Firebase Diagnostic" tab
+5. All tests should pass ✅

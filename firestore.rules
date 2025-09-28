@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow all access for testing (TEMPORARILY - not for production!)
+    // This should work for all collections needed for the chat system
+    match /{document=**} {
+      allow read, write: if true;
+    }
+    
+    // Specific rules for chat collections (these are redundant but explicit)
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+    
+    match /chatList/{chatId} {
+      allow read, write: if true;
+    }
+    
+    match /chats/{chatId} {
+      allow read, write: if true;
+    }
+    
+    match /chatMessages/{messageId} {
+      allow read, write: if true;
+    }
+    
+    match /connectionTest/{testId} {
+      allow read, write: if true;
+    }
+    
+    match /diagnostics/{diagnosticId} {
+      allow read, write: if true;
+    }
+    
+    match /urgentCareAlerts/{alertId} {
+      allow read, write: if true;
+    }
+  }
+}

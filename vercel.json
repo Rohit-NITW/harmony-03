@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/$1"
+    }
+  ],
+  "functions": {
+    "api/chat.js": {
+      "maxDuration": 30,
+      "memory": 256
+    },
+    "api/health.js": {
+      "maxDuration": 10,
+      "memory": 128
+    }
+  },
+  "env": {
+    "GROQ_API_KEY": "@groq-api-key",
+    "NODE_ENV": "production",
+    "CORS_ORIGIN": "@cors-origin"
+  }
+}
